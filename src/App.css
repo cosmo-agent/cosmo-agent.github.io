@@ -1,0 +1,186 @@
+.App {
+  min-height: 100vh;
+  background-color: #ffffff;
+  color: #000000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.container {
+  max-width: 800px;
+  width: 100%;
+  animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.title {
+  font-family: 'Playfair Display', serif;
+  font-size: 4rem;
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.divider {
+  width: 60px;
+  height: 1px;
+  background-color: #000000;
+  margin: 2rem auto;
+}
+
+.subtitle {
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: #666666;
+}
+
+.main {
+  margin-bottom: 4rem;
+}
+
+.about {
+  margin-bottom: 4rem;
+  text-align: center;
+}
+
+.description {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.25rem;
+  font-weight: 300;
+  line-height: 1.8;
+  color: #333333;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.work {
+  margin-bottom: 4rem;
+}
+
+.section-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+  text-align: center;
+  letter-spacing: 0.05em;
+}
+
+.work-list {
+  list-style: none;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.work-list li {
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  padding: 1rem 0;
+  border-bottom: 1px solid #e0e0e0;
+  transition: all 0.3s ease;
+}
+
+.work-list li:last-child {
+  border-bottom: none;
+}
+
+.work-list li:hover {
+  padding-left: 1rem;
+  color: #666666;
+}
+
+.contact {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.contact-links {
+  margin-top: 2rem;
+}
+
+.link {
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #000000;
+  text-decoration: none;
+  padding: 0.75rem 2rem;
+  border: 1px solid #000000;
+  display: inline-block;
+  transition: all 0.3s ease;
+  letter-spacing: 0.1em;
+}
+
+.link:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.footer {
+  text-align: center;
+  padding-top: 2rem;
+  border-top: 1px solid #e0e0e0;
+}
+
+.footer-text {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.875rem;
+  font-weight: 300;
+  color: #999999;
+  letter-spacing: 0.05em;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .title {
+    font-size: 2.5rem;
+  }
+  
+  .description {
+    font-size: 1.1rem;
+  }
+  
+  .App {
+    padding: 1rem;
+  }
+  
+  .container {
+    margin: 2rem 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 2rem;
+  }
+  
+  .subtitle {
+    font-size: 0.875rem;
+  }
+  
+  .description {
+    font-size: 1rem;
+  }
+}
